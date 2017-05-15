@@ -1,3 +1,3 @@
-import createMenu from '../../components/menu/menu';
-var menu = createMenu(['Главная','Блог'], 'menu');
+import createMenu from './menu';
+var menu = createMenu(['Главная','Блог', 'портфолио'], 'menu');
 document.body.appendChild(menu);

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,10 +71,26 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-throw new Error("Cannot find module \"../../components/menu/menu\"");
+/* harmony default export */ __webpack_exports__["a"] = (function (array, className) {
+    var menu = document.createElement("ul");
+    menu.className = className;
+    var listItems = '';
+    array.forEach(function(item) {
+        listItems += '<li>' + item + '</li>';
+    });
+    menu.innerHTML = listItems;
+    return menu;
+});
 
-var menu = __WEBPACK_IMPORTED_MODULE_0__components_menu_menu___default()(['Главная','Блог'], 'menu');
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu__ = __webpack_require__(0);
+
+var menu = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__menu__["a" /* default */])(['Главная','Блог', 'портфолио'], 'menu');
 document.body.appendChild(menu);
 
 
