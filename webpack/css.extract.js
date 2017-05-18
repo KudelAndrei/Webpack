@@ -5,7 +5,7 @@ module.exports = function(paths) {
         module: {
             rules: [
                 {
-                    test: /\.sass$/,
+                    test: /\.scss$/,
                     include: paths,
                     use: ExtractTextPlugin.extract({
                         publicPath: '../',
